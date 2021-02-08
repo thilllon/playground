@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es5",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "out",
+    ".next",
+    ".vscode",
+    "build",
+    "scripts",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ]
+}

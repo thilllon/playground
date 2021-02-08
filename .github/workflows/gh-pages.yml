@@ -1,0 +1,37 @@
+name: Build and Deploy to Github Page
+on:
+  push:
+    branches:
+      - master
+jobs:
+  dummy-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo ★ step1
+      - name: step2
+        run: echo ★ step2
+      - name: step3
+        run: echo ★ step3
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ★ Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+
+      - name: ★ Install and Build 🔧 # This example project is built using npm and outputs the result to the 'out' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          yarn install
+          yarn clean
+          yarn build
+          yarn export
+          touch out/.nojekyll
+        env:
+          SUBDIRECTORY: ${{ secrets.SUBDIRECTORY }}
+
+      - name: ★ Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: out # The folder the action should deploy.
