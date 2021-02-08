@@ -1,0 +1,26 @@
+{
+  "extends": ["plugin:prettier/recommended"],
+  "plugins": ["prettier", "babel"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true }
+  },
+  "rules": {
+    "no-unused-expressions": "off",
+    "allowShortCircuit": "off",
+    "allowTernary": "off",
+    "allowTaggedTemplates": "off",
+    "no-unused-vars": "off",
+    "comma-dangle": [
+      "off",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ]
+  }
+}
