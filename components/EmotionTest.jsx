@@ -1,6 +1,6 @@
 import { css, useTheme } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Button, Container } from '@material-ui/core';
+import { Button, Box } from '@material-ui/core';
 // import { darken, makeStyles } from '@material-ui/core/styles';
 import { darken, makeStyles } from '@material-ui/core';
 
@@ -33,6 +33,7 @@ const cssEmotion = css`
   padding: 0 30px;
   box-shadow: 0 3px 5px 2px rgba(255, 105, 135, 0.3);
 `;
+
 // console.info(cssEmotion);
 // console.info(cssEmotion.styles);
 
@@ -71,7 +72,12 @@ export const EmotionTestButtons = () => {
   const classes2 = useStyles2();
   // console.info('classes', { ...classes2 });
   return (
-    <Container>
+    <Box
+      css={css`
+        display: flex;
+        flex-flow: column nowrap;
+      `}
+    >
       <Button variant='contained' color='primary'>
         Material-UI
       </Button>
@@ -137,6 +143,6 @@ export const EmotionTestButtons = () => {
         complex
       </Button>
       <StyledButton>emotion styled</StyledButton>
-    </Container>
+    </Box>
   );
 };
