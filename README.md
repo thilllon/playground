@@ -40,11 +40,6 @@ Error: Image Optimization using Next.js default loader is not compatible with `n
 - [ ] css responsive style로 수정
 - [ ] tools
 
-## Reference
-
-- https://taeny.dev/javascript/nextjs-with-deployment-platform/
-- https://salgum1114.github.io/nextjs/2019-05-06-nextjs-static-website-1/
-
 # Next.js
 
 ## Next Link
@@ -129,3 +124,8 @@ export const getServerSideProps = ({ params: { postId } }) => {
   return { props: { postData } };
 };
 ```
+
+## Reference
+
+- https://taeny.dev/javascript/nextjs-with-deployment-platform/
+- https://salgum1114.github.io/nextjs/2019-05-06-nextjs-static-website-1/
