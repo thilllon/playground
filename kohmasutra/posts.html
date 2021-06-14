@@ -1,0 +1,1177 @@
+<!DOCTYPE html><html lang="en"><head><meta name="_" content="****************"/><meta charSet="utf-8"/><meta name="theme-color" content="#556cd6"/><meta name="description" content="devlog"/><meta name="keywords" content="blog,react,materialui,webpack,css,javascript"/><meta name="__" content="****************"/><meta charSet="utf-8"/><meta name="a1" content="********************"/><link rel="shortcut icon" href="/playground/favicon.ico"/><title>Thilllon</title><meta name="viewport" content="minimum-scale=1,initial-scale=1,width=device-width"/><link rel="stylesheet" data-href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"/><meta name="a2" content="********************"/><meta name="next-head-count" content="7"/><noscript data-n-css=""></noscript><link rel="preload" href="/playground/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/framework.900ff9a55f86e5377e8c.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/2d54d12e3c5593c0ab8fb905e7e566e2a43f3aad.5860c106161006de5017.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/main-45e4720ad2d053bddb20.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/31e917fa8c8b4b19ba045abd96cf2eec87c82911.d3a766427e4fb5ceef46.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/79761ccf496293c482d72b12f10c312e3c9d1a2d.2a9c88acab65e86aa451.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/115bc2595afe4d345fbe8c562cc72a7cdd6de8d1.e39588ce42c98c573703.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/9af8f74256e158f4b49dee91f9a1ec57bd3cf8b2.fb637fc0ae85e5c54962.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/9201b1d211df5902f248dcc39d128375de8df755.22018bc1498415d3090e.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/pages/_app-8a9133fa9d7ee14d420f.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/c9b82df22fc75113692d3821eb747d7ea0c865f3.32611492ebbe0fe72304.js" as="script"/><link rel="preload" href="/playground/_next/static/chunks/pages/kohmasutra/posts-b198e55261643e03b4ca.js" as="script"/><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #556cd6;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #19857b;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #ff1744;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #556cd6;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(85, 108, 214, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #19857b;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(25, 133, 123, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #556cd6;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #19857b;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+
+  .jss1 {
+    display: flex;
+  }
+  .jss18 {  }
+  .jss19 {  }
+  .jss20 {  }
+  .jss21 {  }
+  .jss22 {  }
+  .jss23 {  }
+  .jss24 {  }
+  .jss25 {  }
+  .jss26 {  }
+  .jss27 {  }
+  .jss28 {  }
+  .jss29 {  }
+  .jss30 {  }
+  .jss31 {  }
+  .jss32 {  }
+  .jss33 {  }
+  .jss34 {  }
+  .jss35 {  }
+  .jss36 {  }
+  .jss37 {  }
+  .jss38 {  }
+  .jss39 {  }
+  .jss40 {  }
+  .jss41 {  }
+  .jss42 {  }
+  .jss43 {  }
+  .jss44 {  }
+  .jss45 {  }
+  .jss46 {  }
+  .jss47 {  }
+  .jss48 {  }
+  .jss49 {  }
+  .jss50 {  }
+  .jss51 {  }
+  .jss52 {  }
+  .jss53 {  }
+  .jss54 {  }
+  .jss55 {  }
+  .jss56 {  }
+  .jss57 {  }
+  .jss58 {  }
+  .jss59 {  }
+  .jss60 {  }
+  .jss61 {  }
+  .jss62 {  }
+  .jss63 {  }
+  .jss64 {  }
+  .jss65 {  }
+  .jss66 {  }
+  .jss67 {  }
+  .jss68 {  }
+  .jss69 {  }
+  .jss70 {  }
+  .jss71 {  }
+  .jss72 {  }
+  .jss73 {  }
+  .jss74 {  }
+  .jss75 {  }
+  .jss76 {  }
+  .jss77 {  }
+  .jss78 {  }
+  .jss79 {  }
+  .jss80 {  }
+  .jss81 {  }
+  .jss82 {  }
+  .jss83 {  }
+  .jss84 {  }
+  .jss85 {  }
+  .jss86 {  }
+  .jss87 {  }
+  .jss88 {  }
+  .jss89 {  }
+  .jss90 {  }
+  .jss91 {  }
+  .jss92 {  }
+  .jss93 {  }
+  .jss94 {  }
+  .jss95 {  }
+  .jss96 {  }
+  .jss97 {  }
+  .jss98 {  }
+  .jss99 {  }
+  .jss100 {  }
+  .jss101 {  }
+  .jss102 {  }
+  .jss103 {  }
+  .jss104 {  }
+  .jss105 {  }
+  .jss106 {  }
+  .jss107 {  }
+  .jss108 {  }
+  .jss109 {  }
+  .jss110 {  }
+  .jss111 {  }
+  .jss112 {  }
+  .jss113 {  }
+  .jss114 {  }
+  .jss115 {  }
+  .jss116 {  }
+  .jss117 {  }
+  .jss118 {  }
+  .jss119 {  }
+  .jss120 {  }
+  .jss121 {  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.43;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.66;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.75;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 300;
+    line-height: 1.167;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.167;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.235;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.334;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.6;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 1.75;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.57;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    line-height: 2.66;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #556cd6;
+  }
+  .MuiTypography-colorSecondary {
+    color: #19857b;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #ff1744;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #556cd6;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(85, 108, 214, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #19857b;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(25, 133, 123, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #556cd6;
+    border: 1px solid rgba(85, 108, 214, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #556cd6;
+    background-color: rgba(85, 108, 214, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #19857b;
+    border: 1px solid rgba(25, 133, 123, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #19857b;
+    background-color: rgba(25, 133, 123, 0.04);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #556cd6;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: rgb(59, 75, 149);
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #556cd6;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #19857b;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: rgb(17, 93, 86);
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #19857b;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiCard-root {
+    overflow: hidden;
+  }
+  .MuiCardActionArea-root {
+    width: 100%;
+    display: block;
+    text-align: inherit;
+  }
+  .MuiCardActionArea-root:hover .MuiCardActionArea-focusHighlight {
+    opacity: 0.04;
+  }
+  .MuiCardActionArea-root.Mui-focusVisible .MuiCardActionArea-focusHighlight {
+    opacity: 0.12;
+  }
+  .MuiCardActionArea-focusHighlight {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: inherit;
+    pointer-events: none;
+    background-color: currentcolor;
+  }
+  .MuiCardActions-root {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+  }
+  .MuiCardActions-spacing > :not(:first-child) {
+    margin-left: 8px;
+  }
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  .MuiCardContent-root:last-child {
+    padding-bottom: 24px;
+  }
+  .MuiCardMedia-root {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .MuiCardMedia-media {
+    width: 100%;
+  }
+  .MuiCardMedia-img {
+    object-fit: cover;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #ffffff;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #ffffff;
+}
+  .MuiDrawer-docked {
+    flex: 0 0 auto;
+  }
+  .MuiDrawer-paper {
+    top: 0;
+    flex: 1 0 auto;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiDrawer-paperAnchorLeft {
+    left: 0;
+    right: auto;
+  }
+  .MuiDrawer-paperAnchorRight {
+    left: auto;
+    right: 0;
+  }
+  .MuiDrawer-paperAnchorTop {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+  }
+  .MuiDrawer-paperAnchorDockedLeft {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedTop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedRight {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiDrawer-paperAnchorDockedBottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+@media (min-width:0px) and (max-width:599.95px) {
+  .jss2 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss3 {
+    display: none;
+  }
+}
+@media (max-width:599.95px) {
+  .jss4 {
+    display: none;
+  }
+}
+@media (min-width:600px) and (max-width:959.95px) {
+  .jss5 {
+    display: none;
+  }
+}
+@media (min-width:600px) {
+  .jss6 {
+    display: none;
+  }
+}
+@media (max-width:959.95px) {
+  .jss7 {
+    display: none;
+  }
+}
+@media (min-width:960px) and (max-width:1279.95px) {
+  .jss8 {
+    display: none;
+  }
+}
+@media (min-width:960px) {
+  .jss9 {
+    display: none;
+  }
+}
+@media (max-width:1279.95px) {
+  .jss10 {
+    display: none;
+  }
+}
+@media (min-width:1280px) and (max-width:1919.95px) {
+  .jss11 {
+    display: none;
+  }
+}
+@media (min-width:1280px) {
+  .jss12 {
+    display: none;
+  }
+}
+@media (max-width:1919.95px) {
+  .jss13 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss14 {
+    display: none;
+  }
+}
+@media (min-width:1920px) {
+  .jss15 {
+    display: none;
+  }
+}
+@media (min-width:0px) {
+  .jss16 {
+    display: none;
+  }
+}
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiList-root {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+  }
+  .MuiList-padding {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .MuiList-subheader {
+    padding-top: 0;
+  }
+  .MuiListItem-root {
+    width: 100%;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+    text-decoration: none;
+  }
+  .MuiListItem-root.Mui-focusVisible {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .MuiListItem-root.Mui-disabled {
+    opacity: 0.5;
+  }
+  .MuiListItem-container {
+    position: relative;
+  }
+  .MuiListItem-dense {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  .MuiListItem-alignItemsFlexStart {
+    align-items: flex-start;
+  }
+  .MuiListItem-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-clip: padding-box;
+  }
+  .MuiListItem-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .MuiListItem-button {
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  .MuiListItem-button:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+@media (hover: none) {
+  .MuiListItem-button:hover {
+    background-color: transparent;
+  }
+}
+  .MuiListItem-secondaryAction {
+    padding-right: 48px;
+  }
+  .MuiListItemIcon-root {
+    color: rgba(0, 0, 0, 0.54);
+    display: inline-flex;
+    min-width: 56px;
+    flex-shrink: 0;
+  }
+  .MuiListItemIcon-alignItemsFlexStart {
+    margin-top: 8px;
+  }
+  .MuiListItemText-root {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .MuiListItemText-multiline {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .MuiListItemText-inset {
+    padding-left: 56px;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+  .jss17 {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .jss17 {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .jss17 {
+    min-height: 64px;
+  }
+}</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"/></head><body><div id="__next"><div class="MuiBox-root jss1"><style data-emotion="css 23w7ya">.css-23w7ya{-webkit-box-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;}@media (max-width:1279.95px){.css-23w7ya{background:#556cd6;}}@media (min-width:600px){.css-23w7ya{width:calc(100% - 240px);margin-left:240;}}</style><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary css-23w7ya mui-fixed MuiPaper-elevation4"><div class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"><div class="jss6"><style data-emotion="css 1l03z0z">.css-1l03z0z{margin-right:16px 16px;background:#556cd6;}</style><button class="MuiButtonBase-root MuiIconButton-root css-1l03z0z MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" type="button" aria-label="open drawer"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div><style data-emotion="css 1tx1l5v">.css-1tx1l5v{margin-right:auto;}</style><h6 class="MuiTypography-root css-1tx1l5v MuiTypography-h6">Playground</h6></div></header><style data-emotion="css 1o5pq7n">@media (min-width:600px){.css-1o5pq7n{width:240px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}}</style><nav aria-label="mailbox folders" class="css-1o5pq7n"><div class="jss6"><style data-emotion="css 1g60bp2">.css-1g60bp2 .MuiDrawer-paper{width:240px;}</style></div><div class="jss4"><div class="MuiDrawer-root MuiDrawer-docked css-1g60bp2"><div class="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"><div><ul class="MuiList-root MuiList-padding"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/" href="/playground/"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Home</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/converter" href="/playground/converter"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Converter</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/kohmasutra" href="/playground/kohmasutra"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.55 12c-1.07-.71-2.25-1.27-3.53-1.61 1.28.34 2.46.9 3.53 1.61zm10.43-1.61c-1.29.34-2.49.91-3.57 1.64 1.08-.73 2.28-1.3 3.57-1.64z"></path><path d="M15.49 9.63c-.18-2.79-1.31-5.51-3.43-7.63-2.14 2.14-3.32 4.86-3.55 7.63 1.28.68 2.46 1.56 3.49 2.63 1.03-1.06 2.21-1.94 3.49-2.63zm-6.5 2.65c-.14-.1-.3-.19-.45-.29.15.11.31.19.45.29zm6.42-.25c-.13.09-.27.16-.4.26.13-.1.27-.17.4-.26zM12 15.45C9.85 12.17 6.18 10 2 10c0 5.32 3.36 9.82 8.03 11.49.63.23 1.29.4 1.97.51.68-.12 1.33-.29 1.97-.51C18.64 19.82 22 15.32 22 10c-4.18 0-7.85 2.17-10 5.45z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Kohmasutra</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/next-mui-emotion" href="/playground/next-mui-emotion"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Next.js + Material-UI + Emotion</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games/animal-run" href="/playground/games/animal-run"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Animal Run</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/about" href="/playground/about"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">About</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games" href="/playground/games"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Games</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games/tictactoe" href="/playground/games/tictactoe"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">TicTacToe</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games/minesweeper" href="/playground/games/minesweeper"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Mine Sweeper</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/movies" href="/playground/movies"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Movies</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/posts" href="/playground/posts"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3H4.99c-1.11 0-1.98.9-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10zm-3-5h-2V7h-4v3H8l4 4 4-4z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">test posts</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games/omok" href="/playground/games/omok"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Omok</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games/themind" href="/playground/games/themind"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">The Mind</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/games/lostcities" href="/playground/games/lostcities"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Lost Cities</span></div></a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button MuiTypography-colorPrimary" tabindex="0" role="button" aria-disabled="false" data-href="/playground/tistory" href="/playground/tistory"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Tistory</span></div></a></ul></div></div></div></div></nav><style data-emotion="css gimtdo">.css-gimtdo{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;padding:24px 24px;}@media (max-width:1279.95px){.css-gimtdo{padding:0;}}</style><main class="css-gimtdo"><div class="MuiBox-root jss18 jss17"></div><div class="MuiContainer-root MuiContainer-maxWidthLg"><style data-emotion="css kff9ir">.css-kff9ir{text-transform:capitalize;}</style><h4 class="MuiTypography-root css-kff9ir MuiTypography-h4 MuiTypography-gutterBottom">kohmasutra</h4><div class="MuiBox-root jss19"><h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom">100 Kamasutra sex positions</h6></div><style data-emotion="css 1aiomzt">.css-1aiomzt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-flow:row nowrap;-webkit-flex-flow:row nowrap;-ms-flex-flow:row nowrap;flex-flow:row nowrap;}.css-1aiomzt>.MuiButton-root{text-transform:uppercase;}.css-1aiomzt>.MuiButton-root:first-of-type{margin-right:1rem;}</style><div class="MuiBox-root jss20 css-1aiomzt"><button class="MuiButtonBase-root MuiButton-root MuiButton-outlined" tabindex="0" type="button"><span class="MuiButton-label">go back</span></button><a class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedSecondary" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/60"><span class="MuiButton-label">random</span></a></div><style data-emotion="css 1wb33nr">.css-1wb33nr{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-flow:row wrap;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;}</style><div class="MuiBox-root jss21 css-1wb33nr"><style data-emotion="css 1huya52">.css-1huya52{max-width:45%;margin:16px 16px;height:14rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}@media (max-width:959.95px){.css-1huya52{max-width:100%;}}</style><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__0" title="Bandoleer"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><style data-emotion="css 1wwk2bk">.css-1wwk2bk{width:150px;}</style><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/1-bandoleer.jpg" title="Bandoleer" alt="1-bandoleer.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><style data-emotion="css 1x0brxv">.css-1x0brxv{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-flex-flow:column nowrap;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}</style><div class="MuiBox-root jss22 css-1x0brxv"><style data-emotion="css 18g08sj">.css-18g08sj{padding-bottom:0;}</style><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">1. Bandoleer</h2><style data-emotion="css 13a6rvs">.css-13a6rvs{overflow:hidden;text-overflow:ellipsis;display:-moz-box;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;}</style><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">While the woman lays on her back and lifts both knees up towards her chest, the man kneels facing her. She can then rest her feet on his chest, while he places his forearms on her knees. The woman can then grab the man&#x27;s thighs and pull him closer for deeper penetration. The more he presses down on her knees, the greater the pleasure for her. A relatively simple sex position, which doesn&#x27;t require too much flexibilty.</p></div><style data-emotion="css skgbeu">.css-skgbeu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end;}</style><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/1"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__1" title="The Bridge"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/2-the-bridge.jpg" title="The Bridge" alt="2-the-bridge.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss23 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">2. The Bridge</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Only suitable for extremely strong and flexible men - he makes a bridge, while the woman straddles him. She can then move up and down by pushing off the floor with her feet - not for the faint-hearted!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/2"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__2" title="The Grip"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/3-the-grip.jpg" title="The Grip" alt="3-the-grip.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss24 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">3. The Grip</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Similar to the missionary position, the grip requires the woman to lay on her back and raise her hips slightly (it may be more comfortable to place a cushion under the woman&#x27;s bottom). The man then places himself between her legs, while she moves her pelvis side to side. Simple and good if you&#x27;re not feeling too energetic.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/3"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__3" title="Afternoon Delight"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/4-afternoon-delight.jpg" title="Afternoon Delight" alt="4-afternoon-delight.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss25 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">4. Afternoon Delight</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lays on his side, while the woman lays on her back at a right angle to her partner. She puts her knees over his hip to allow easy penetration. Extremely easy and perfect for a lazy Sunday afternoon or if you need to slow it down a bit during a long sex session.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/4"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__4" title="The Rider"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/5-the-rider.jpg" title="The Rider" alt="5-the-rider.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss26 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">5. The Rider</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Similar to reverse cowgirl, the rider involves the woman straddling the man while facing away from him. She then leans forward and while balancing herself on his knees slides up and down. The man can also control penetration by holding onto the woman&#x27;s waist. Not too much flexibility required and both sets of hands are free and well place for extra stimulation.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/5"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__5" title="The Eagle"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/6-the-eagle.jpg" title="The Eagle" alt="6-the-eagle.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss27 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">6. The Eagle</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her back with her legs in the air and knees slightly bent (she may need a cushion under her bottom to make it more comfortable). The man then kneels between her legs and holds onto her ankles while he enters her. Relatively easy and deep penetration.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/6"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__6" title="The Visitor"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/7-the-visitor.jpg" title="The Visitor" alt="7-the-visitor.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss28 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">7. The Visitor</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position is ideal for an impromptu sex session. The man and the woman stand face to face and he stimulates her genitals with his penis before penetrating her. An easy position if the woman is a similar height to the man (or wearing heels), but if not a table or work surface will help!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/7"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__7" title="The Slide"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/8-the-slide.jpg" title="The Slide" alt="8-the-slide.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss29 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">8. The Slide</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">An easy sex position which requires minimal effort and increases tightness. The man lies flat on his back, while the woman lies on top of him with her legs together. He is then able to penetrate her as she slides up and down on his body. And try this top tip - keeping your socks on could increase your chances of having an orgasm.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/8"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__8" title="The Clasp"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/9-the-clasp.jpg" title="The Clasp" alt="9-the-clasp.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss30 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">9. The Clasp</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">He stands and she wraps her legs around his waist while he supports her by holding her bottom and back. For more support and deeper penetration she can rest her back against a wall. Ideal for anytime/anywhere sex, but does require a certain degree of strength and energy from both the man and woman.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/9"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__9" title="The Tominagi"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/10-the-tominagi.jpg" title="The Tominagi" alt="10-the-tominagi.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss31 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">10. The Tominagi</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man kneels while the woman lies on her back and rests her feet on his chest. The man controls the penetration, which can be very deep - the perfect position for less endowed men.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/10"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__10" title="The Seated Ball"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/11-the-seated-ball.jpg" title="The Seated Ball" alt="11-the-seated-ball.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss32 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">11. The Seated Ball</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position requires quite a lot of strength and flexibility. The woman crouches down onto the man&#x27;s lap, while she controls the penetration by rocking back and forth on her heels.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/11"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__11" title="The Curled Angel"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/12-the-curled-angel.jpg" title="The Curled Angel" alt="12-the-curled-angel.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss33 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">12. The Curled Angel</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman curls up into a ball with her knees drawn up to her chest, while the man spoons her from behind. This position is ideal if you&#x27;re feeling lazy and it is also great for pregnant women too - the woman simply needs to lower her legs to accommodate her growing bump.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/12"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__12" title="The Glowing Juniper"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/13-the-glowing-juniper.jpg" title="The Glowing Juniper" alt="13-the-glowing-juniper.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss34 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">13. The Glowing Juniper</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Perfect for when you&#x27;re feeling a little bit lazy - the woman lies on her back with her legs parted and knees slightly bent. The man sits between her legs with his legs stretched either side of her. He can then lift her hips for easier penetration while she lays back and enjoys!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/13"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__13" title="The Cross"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/14-the-cross.jpg" title="The Cross" alt="14-the-cross.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss35 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">14. The Cross</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with one leg extended and the other raised in the air, but bent in half. The man then straddles the woman&#x27;s extended leg, while holding onto her other leg to control penetration. Relatively easy and good if the woman is tired.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/14"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__14" title="The Perch"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/15-the-perch.jpg" title="The Perch" alt="15-the-perch.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss36 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">15. The Perch</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on a chair or stool and the woman sits on his lap. With her back to him she can control the penetration by rocking back and forth on her heels. His hands are then free to play with her clitoris and breasts. A good position for pregnant women and tired men.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/15"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__15" title="The Plough"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/16-the-plough.jpg" title="The Plough" alt="16-the-plough.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss37 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">16. The Plough</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on the edge of the bed with her legs hanging off. The man then positions himself between her legs and lifts her hips and thighs to allow penetration, while she supports herself on her elbows. This position requires a great deal of strength and flexibility.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/16"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__16" title="The Toad"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/17-the-toad.jpg" title="The Toad" alt="17-the-toad.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss38 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">17. The Toad</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies back with her legs open, while the man lies between her legs and slowly penetrates her. For greater intimacy, she can wrap her legs around him and control the pressure of his grinding by gently pressing on his buttocks with her feet. Simple and an ideal sex position for a slower pace of lovemaking.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/17"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__17" title="The Hero"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/18-the-hero.jpg" title="The Hero" alt="18-the-hero.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss39 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">18. The Hero</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back, with her knees pulled up to her chest and her feet pointing up to the ceiling. The man kneels and rests his things under her bum while penetrating her. An easy (ish) position but the woman may tire faster than the man as she has to hold her legs in the air.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/18"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__18" title="The Peg"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/19-the-peg.jpg" title="The Peg" alt="19-the-peg.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss40 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">19. The Peg</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">While the man lays on his side, the woman curls up into a ball and with her head at his feet, she wraps her legs around his. She can then wrap her arms around the top of his legs while he penetrates her. A difficult position to master, but worth the extra effort.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/19"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__19" title="The Classic"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/20-the-classic.jpg" title="The Classic" alt="20-the-classic.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss41 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">20. The Classic</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">While similar to the missionary, the classic position involves the woman laying on her back with a cushion under her bottom. This slight tilt of the pelvis allows for deeper penetration as the man places himself between her legs and enters her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/20"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__20" title="The Fan"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/21-the-fan.jpg" title="The Fan" alt="21-the-fan.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss42 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">21. The Fan</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">With her back to her partner, the woman bends over, crosses her arms and rests her elbows on a chair for support. Then man then enters her from behind (ideal for anal sex) and can control the depth and pressure by holding the top of her thighs.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/21"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__21" title="The Snail"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/22-the-snail.jpg" title="The Snail" alt="22-the-snail.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss43 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">22. The Snail</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back and pulls her knees up to her chest. The man kneels down and enters her. She can then rest her feet on his shoulders, while he supports himself with his hands either side of her shoulders. The penetration is very deep in his sex position, so be careful not to go too fast as it may cause pain for the woman.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/22"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__22" title="The Slip"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/23-the-slip.jpg" title="The Slip" alt="23-the-slip.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss44 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">23. The Slip</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man kneels down and leans back, supporting himself with his hands behind him, while the woman lies flat on her back. She then tilts her hips towards him to aid penetration, while positioning her legs either side of his hips. This is a relatively easy position, which is highly erotic with deep penetration.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/23"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__23" title="The Hound"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/24-the-hound.jpg" title="The Hound" alt="24-the-hound.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss45 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">24. The Hound</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Similar to doggy style, but instead of being on all fours, the woman lowers herself onto her forearms while the man penetrates her from behind. He can also lean forward and as his hands are free he can caress her body at the same time.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/24"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__24" title="The Crouching Tiger"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/25-the-crouching-tiger.jpg" title="The Crouching Tiger" alt="25-the-crouching-tiger.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss46 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">25. The Crouching Tiger</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">While the man lays on the bed with his knees off the edge, the woman squats over him facing away. She is fully in control of depth and pace of penetration. While this sex position is easy for the man, it requires some decent thigh muscles from the woman and be careful not to lose your balance and fall off the bed. Good luck!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/25"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__25" title="The Hinge"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/26-the-hinge.jpg" title="The Hinge" alt="26-the-hinge.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss47 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">26. The Hinge</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position requires good balance, but once in the rhythm it&#x27;s great for depth control. The man kneels behind the woman and while leaning backwards uses one arm to support himself. The women kneels in front of him and supports herself on her elbows, allowing her to thrust back onto him. He can then use his spare hand to touch her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/26"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__26" title="The Ship"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/27-the-ship.jpg" title="The Ship" alt="27-the-ship.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss48 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">27. The Ship</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">While the man lies flat on his back, the woman simply sits on top of him with both legs to one side. The woman is in complete control. Ideal when the man is feeling tired/lazy.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/27"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__27" title="From Behind"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/28-from-behind.jpg" title="From Behind" alt="28-from-behind.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss49 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">28. From Behind</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man stands behind the woman and enters her. He&#x27;s in control of the thrusts. She may find it easier to balance with a wall to lean against. This sex position is easy for some, but doesn&#x27;t work so well if you&#x27;re not similar heights.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/28"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__28" title="Balancing Act"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/29-balancing-act.jpg" title="Balancing Act" alt="29-balancing-act.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss50 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">29. Balancing Act</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lies on his back with his legs apart while the woman sits down between his thighs. The woman must then curl her body up into a ball while the man supports her. Her hands are free to touch herself or touch his perineum. This position requires a certain degree of strength from both parties.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/29"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__29" title="Splitting Bamboo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/30-splitting-bamboo.jpg" title="Splitting Bamboo" alt="30-splitting-bamboo.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss51 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">30. Splitting Bamboo</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her back with one leg stretched out and the other resting on her partner&#x27;s shoulder. The man straddles her thigh, while holding on to her elevated leg to balance himself. A relatively easy position which leaves both of the woman&#x27;s hands free to fondle herself or her partner.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/30"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__30" title="The Frog"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/31-the-frog.jpg" title="The Frog" alt="31-the-frog.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss52 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">31. The Frog</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on the edge of the bed with his feet on the floor while the woman crouches (like a frog) on his lap. She can then move up and down to control the penetration, while pressing on his thighs for support. An easy position for the man, but requires strength and balance from the woman.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/31"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__31" title="The Column"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/32-the-column.jpg" title="The Column" alt="32-the-column.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss53 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">32. The Column</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman stands in front of the man with her back to him and their arms intertwined. The man can then penetrate the woman from behind. The woman may find it easier to lean on a table.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/32"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__32" title="The Candle"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/33-the-candle.jpg" title="The Candle" alt="33-the-candle.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss54 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">33. The Candle</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with one cushion under her head and another under her bottom. She then pulls her knees up to her chest and lifts her legs in the air. The man kneels down with his legs either side of her and enters her hips. Great for deep penetration and his hands are also free, which is an added bonus.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/33"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__33" title="The Basket"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/34-the-basket.jpg" title="The Basket" alt="34-the-basket.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss55 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">34. The Basket</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits with one leg stretched out and the other leg bent at the knee to help him balance. The woman sits on his lap. While she can control most of the movement, he also has some control with his hands on her hips. He is also in the ideal position to kiss and suck her nipples while having sex.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/34"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__34" title="The Galley"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/35-the-galley.jpg" title="The Galley" alt="35-the-galley.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss56 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">35. The Galley</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits with his weight on one arm (the other is free to fondle) and his legs stretched out. The woman sits on top of him and leans forward. She can then support herself with her arms, while being in full control of the movement and penetration. A good position for a tired man and an energetic woman.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/35"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__35" title="The Clip"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/36-the-clip.jpg" title="The Clip" alt="36-the-clip.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss57 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">36. The Clip</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lies on his back and closes his legs while the woman sits astride him and leans back supporting herself on her arms. She can then grind on to him while he lays back and enjoys himself.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/36"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__36" title="The Whisper"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/37-the-whisper.jpg" title="The Whisper" alt="37-the-whisper.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss58 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">37. The Whisper</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lies on his side while the woman wraps her legs around his waist and crosses her ankles. He is then free to thrust in and out.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/37"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__37" title="The Challenge"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/38-the-challenge.jpg" title="The Challenge" alt="38-the-challenge.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss59 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">38. The Challenge</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position requires a sturdy chair/stool and a great deal of balance. The woman crouches on the stool while the man enters her from behind. He will need to hold firmly onto her waist to stop her toppling over.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/38"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__38" title="The Kneel"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/39-the-kneel.jpg" title="The Kneel" alt="39-the-kneel.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss60 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">39. The Kneel</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">In this sex position the woman and the man both kneel. The woman puts her legs either side of the man&#x27;s so he can penetrate her. They can both wrap their arms around each other. A relatively easy, and yet extremely passionate position.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/39"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__39" title="The Kneeling Wheelbarrow"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/40-the-kneeling-wheelbarrow.jpg" title="The Kneeling Wheelbarrow" alt="40-the-kneeling-wheelbarrow.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss61 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">40. The Kneeling Wheelbarrow</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The Kneeling Wheelbarrow is a slightly easier variation of the standing wheelbarrow. The woman kneels on one leg with her other leg stretched out. She then leans on the opposite elbow to the leg she is kneeling on while her partner kneels behind her. The man can hold the woman&#x27;s hips to help her balance while he enters her. Be warned, it&#x27;s a very tiring position for the woman so make sure you don&#x27;t overdo it!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/40"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__40" title="The Spider"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/41-the-spider.jpg" title="The Spider" alt="41-the-spider.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss62 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">41. The Spider</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits with his legs stretched out and leans back on his hands. The woman sits astride him facing the man. She also leans back on her hands and can use them to help her rock back and forth.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/41"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__41" title="The Fold"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/42-the-fold.jpg" title="The Fold" alt="42-the-fold.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss63 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">42. The Fold</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with a cushion under her bottom to raise her hips. The man sits with his legs stretched out either side of her, while she lets her legs hang behind his back. An ideal sex position if you&#x27;re both lacking in energy.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/42"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__42" title="The Sphinx"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/43-the-sphinx.jpg" title="The Sphinx" alt="43-the-sphinx.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss64 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">43. The Sphinx</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her front with her weight on her elbows. She stretches one leg out and bends the other to the side. The man lays on top and can penetrate from behind while leaning on his hands for support. A tiring position for the man, but worth it for the woman as the pressure of his body on her pelvis helps her to climax.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/43"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__43" title="The Deckchair"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/44-the-deckchair.jpg" title="The Deckchair" alt="44-the-deckchair.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss65 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">44. The Deckchair</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits with his legs stretched out and leans back on his hands. The woman lays on her back facing him and with a pillow under her bottom she can comfortably rest her feet on his shoulders. This is a good sex position for deep penetration.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/44"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__44" title="The Waterfall"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/45-the-waterfall.jpg" title="The Waterfall" alt="45-the-waterfall.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss66 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">45. The Waterfall</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on a chair or a stool while the women sits on his lap. Once he is penetrating her she leans right back (if necessary she can rest her head on a cushion on the floor) while he takes full control of all the movement. Not for the faint hearted! This sex position requires a lot of strength and flexibility.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/45"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__45" title="The Double Decker"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/46-the-double-decker.jpg" title="The Double Decker" alt="46-the-double-decker.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss67 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">46. The Double Decker</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The double decker is the perfect sex position for when you are transitioning between other positions. While the man lies on his back, the woman lies on top of him with her back to him. She supports herself on her elbows, either side of the man&#x27;s waist and to help her balance she puts her feet on the man&#x27;s knees.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/46"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__46" title="The Dolphin"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/47-the-dolphin.jpg" title="The Dolphin" alt="47-the-dolphin.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss68 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">47. The Dolphin</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies down on her back and the man places himself between her legs. He then lifts her up by the waist so all of her weight is on her head and shoulders. A moderately easy sex position, but it may be hard to maintain for a long time as the woman may get uncomfortable.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/47"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__47" title="The Reverse Cowgirl"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/48-the-reverse-cowgirl.jpg" title="The Reverse Cowgirl" alt="48-the-reverse-cowgirl.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss69 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">48. The Reverse Cowgirl</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The reverse cowgirl involves the man laying on his back with the woman sitting astride him with her back to him. The woman is in full control of all the movements. A really simple sex position, which almost anyone can do. Go on, give it a go!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/48"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__48" title="The Lotus Blossom"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/49-the-lotus-blossom.jpg" title="The Lotus Blossom" alt="49-the-lotus-blossom.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss70 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">49. The Lotus Blossom</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits with his legs crossed while the woman sits on his lap with her legs wrapped around his waist. An easy, intimate sex position if you are relatively flexible.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/49"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__49" title="The Amazon"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/50-the-amazon.jpg" title="The Amazon" alt="50-the-amazon.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss71 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">50. The Amazon</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on a chair - ideally the chair won&#x27;t be too high as the woman&#x27;s feet need to touch the ground. The woman sits on his lap facing him and uses her feet to bounce up and down. Enjoy giving your thighs a good work out with this sex position!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/50"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__50" title="The Close-Up"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/51-the-close-up.jpg" title="The Close-Up" alt="51-the-close-up.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss72 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">51. The Close-Up</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man and woman both lie on their sides with their legs pulled up to their chests. The woman faces away from the man and pushes her hips down into his crotch. A very easy, gentle sex position, which can be extremely intimate too.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/51"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__51" title="The Star"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/52-the-star.jpg" title="The Star" alt="52-the-star.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss73 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">52. The Star</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with one leg stretched out and the other bent up. The man slides in between her legs and pushes one of his legs underneath her to raise her hips. To help his balance the man leans back on his hands.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/52"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__52" title="The Indian Handstand"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/53-the-indian-handstand.jpg" title="The Indian Handstand" alt="53-the-indian-handstand.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss74 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">53. The Indian Handstand</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position is quite challenging; it requires a great deal of strength and balance from the woman. The man stands while the woman does a headstand. The man enters the woman from behind and helps her to balance by holding onto her hips.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/53"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__53" title="The Rocking Horse"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/54-the-rocking-horse.jpg" title="The Rocking Horse" alt="54-the-rocking-horse.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss75 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">54. The Rocking Horse</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits with his legs crossed and leans back supporting himself with his arms. The woman sits astride him with her knees bent either side of his waist. The woman can then rock back and forth in a rocking horse motion.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/54"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__54" title="The Super 8"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/55-the-super-8.jpg" title="The Super 8" alt="55-the-super-8.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss76 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">55. The Super 8</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies flat on her back with a small cushion under her bottom to raise her hips. The man lies between her legs and supports himself on his arms. Both the man and the woman are free to move in rhythm with each other.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/55"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__55" title="Ascent to Desire"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/56-ascent-to-desire.jpg" title="Ascent to Desire" alt="56-ascent-to-desire.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss77 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">56. Ascent to Desire</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man stands with his knees ever so slightly bent and the woman stands facing him. He then lifts her off the ground and she wraps her legs around his waist and her arms around his neck while he penetrates her. It maybe easier to start with the man sitting and once in position he can stand.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/56"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__56" title="The Standing Wheelbarrow"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/57-the-standing-wheelbarrow.jpg" title="The Standing Wheelbarrow" alt="57-the-standing-wheelbarrow.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss78 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">57. The Standing Wheelbarrow</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Another challenging position which requires a great deal of skill and balance. The woman starts on all fours, she can rest her elbows on a pillow if that&#x27;s more comfortable. The man kneels behind the woman and enters her. Once he has penetrated the woman he can slowly lift her off the ground by holding onto her ankles.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/57"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__57" title="Doggy Style"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/58-doggy-style.jpg" title="Doggy Style" alt="58-doggy-style.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss79 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">58. Doggy Style</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">A classic position which almost anyone can do. The woman crouches on all fours, taking her weight on her hands, while her partner enters her from behind. While the woman can press back into him, the man is in control of most of the movement.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/58"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__58" title="The Nirvana"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/59-the-nirvana.jpg" title="The Nirvana" alt="59-the-nirvana.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss80 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">59. The Nirvana</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">In this sex position the woman lies flat on her back with her legs closed and her arms stretched out holding the bedposts (if possible). The man lays on top of her with his legs either side of hers. He slowly penetrates her while her legs remain shut.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/59"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__59" title="The Padlock"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/60-the-padlock.jpg" title="The Padlock" alt="60-the-padlock.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss81 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">60. The Padlock</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman sits on the edge of a high piece of furniture, for example a table or a washing machine. She leans back and supports herself with her arms. The man stands in front of her. She can wrap her legs around his waist as he enters her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/60"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__60" title="The Rock &#x27;n&#x27; Roller"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/61-the-rock-n-roller.jpg" title="The Rock &#x27;n&#x27; Roller" alt="61-the-rock-n-roller.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss82 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">61. The Rock &#x27;n&#x27; Roller</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with a pillow behind her head. She then lifts her legs in the air and rocks back - like she&#x27;s going to do a backwards roll. The man kneels behind her and keeps her hips elevated on his thighs while entering her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/61"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__61" title="The Backward Slide"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/62-the-backward-slide.jpg" title="The Backward Slide" alt="62-the-backward-slide.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss83 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">62. The Backward Slide</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on the edge of the bed with his legs hanging down and a cushion behind his back for support. The woman sits astride him and bends her legs so her knees are level with his shoulders. She then carefully leans back and rests her hands on the floor, either side of his feet, to balance.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/62"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__62" title="The Crossed Keys"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/63-the-crossed-keys.jpg" title="The Crossed Keys" alt="63-the-crossed-keys.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss84 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">63. The Crossed Keys</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with her legs in the air. Her bottom needs to be at the edge of the bed and her legs must be crossed. The man stands facing her and holds onto her legs while he penetrates her. An easy sex position.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/63"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__63" title="The Ape"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/64-the-ape.jpg" title="The Ape" alt="64-the-ape.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss85 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">64. The Ape</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">If you fancy something a little bit different give this position a try. The man lies on his back and brings his knees up to his chest. The woman sits down on her partner facing away from him while he rests his feet on her back and penetrates her. The woman uses her feet to balance and control the motion. Great for deep penetration.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/64"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__64" title="The Reclining Lotus"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/65-the-reclining-lotus.jpg" title="The Reclining Lotus" alt="65-the-reclining-lotus.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss86 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">65. The Reclining Lotus</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position requires a great deal of flexibility from the woman, who lays on her back with her legs crossed. The man lays on top and uses his arms to balance as he penetrates her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/65"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__65" title="Wide Opened"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/66-wide-opened.jpg" title="Wide Opened" alt="66-wide-opened.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss87 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">66. Wide Opened</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her back with a pillow under her head. The man kneels between her legs and slides his thighs under her back to raise her hips as he enters her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/66"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__66" title="The Peg"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/67-the-peg.jpg" title="The Peg" alt="67-the-peg.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss88 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">67. The Peg</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lies on his back with his legs stretched out and parted. The woman lies on top of him with her legs closed and stretched out. This is a good sex position for well endowed partners as the man can&#x27;t penetrate too deeply, as the woman&#x27;s legs are closed. Also good for intimacy as you are face to face.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/67"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__67" title="Indrani"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/68-indrani.jpg" title="Indrani" alt="68-indrani.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss89 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">68. Indrani</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with a pillow under her head. She pulls her knees up to her chest while the man slides between her legs. The woman has her hands free to pull the man towards her and control penetration.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/68"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__68" title="Suspended Congress"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/69-suspended-congress.jpg" title="Suspended Congress" alt="69-suspended-congress.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss90 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">69. Suspended Congress</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man leans against a wall while lifting the woman off the floor and supporting her with his hands under her bottom. The woman can grip the man&#x27;s waist with her thighs. Requires strength from both parties, but well worth the effort.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/69"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__69" title="The Suspended Scissors"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/70-the-suspended-scissors.jpg" title="The Suspended Scissors" alt="70-the-suspended-scissors.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss91 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">70. The Suspended Scissors</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Warning: this position requires lots of strength and plenty of balance. The woman lies right on the edge of the bed with just her feet touching the mattress for support. She then balances on the floor with her left arm. The man stands astride her left leg and raises her right leg with his hands. A bit tricky, but not so difficult once you&#x27;re in position.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/70"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__70" title="The Propeller"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/71-the-propeller.jpg" title="The Propeller" alt="71-the-propeller.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss92 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">71. The Propeller</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This one definitely won&#x27;t work for everyone. In fact it will only work if the man is extremely well endowed. The woman lies flat on her back with her legs closed. The man lies on top of her facing the opposite direction. Once inside her he can slowly move his hips in a circular motion.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/71"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__71" title="The Prone Tiger"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/72-the-prone-tiger.jpg" title="The Prone Tiger" alt="72-the-prone-tiger.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss93 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">72. The Prone Tiger</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on the bed with his legs stretched out in front of him. The woman lays on her front, parts her legs and slowly backs into him, lowering herself onto his penis. The woman&#x27;s legs should be stretched out behind the man.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/72"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__72" title="The Crisscross"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/73-the-crisscross.jpg" title="The Crisscross" alt="73-the-crisscross.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss94 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">73. The Crisscross</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her side facing away from the man with her legs slightly parted. The man also lays on his side, but at a right angle to the woman, and slides in between her legs to enter her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/73"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__73" title="The Erotic V"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/74-the-erotic-v.jpg" title="The Erotic V" alt="74-the-erotic-v.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss95 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">74. The Erotic V</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman sits on the edge of a table and the man stands in front of her. The woman needs to lift her legs right up and rest the back of her knees on the man&#x27;s shoulders. She can also wrap her arms around his neck for support, while he can grip her bottom to help control the motion.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/74"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__74" title="The Catherine Wheel"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/75-the-catherine-wheel.jpg" title="The Catherine Wheel" alt="75-the-catherine-wheel.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss96 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">75. The Catherine Wheel</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man and woman sit down facing each other. She wraps her legs around his waist while he enters her. He then wraps one of his legs over her waist. To maintain balance the woman can lean on her arms, while the man rests on his elbows. Quite a tricky sex position to master.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/75"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__75" title="The Triumph Arch"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/76-the-triumph-arch.jpg" title="The Triumph Arch" alt="76-the-triumph-arch.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss97 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">76. The Triumph Arch</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position requires an extremely supple woman as she needs to lay flat on her back with her legs bent underneath her. The man then slides in between her legs with his legs stretched out so they are either side of her head.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/76"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__76" title="The X-Rated"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/77-the-x-rated.jpg" title="The X-Rated" alt="77-the-x-rated.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss98 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">77. The X-Rated</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lies flat on his back with a pillow under his head. The woman lies on top of him facing away from him with her legs either side of his waist and her arms wrapped around his legs. She is in the perfect position to slide up and down, while he has an x-rated view.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/77"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__77" title="The Shoulder Stand"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/78-the-shoulder-stand.jpg" title="The Shoulder Stand" alt="78-the-shoulder-stand.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss99 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">78. The Shoulder Stand</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her back and lifts her legs and entire torso in the air, with help from the man. The man kneels behind her and enters her while she rests her legs on his shoulders. This sex position is best if you go slow.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/78"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__78" title="The Rowing Boat"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/79-the-rowing-boat.jpg" title="The Rowing Boat" alt="79-the-rowing-boat.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss100 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">79. The Rowing Boat</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The best way to start this position is with the man laying back and the woman sitting astride him. Once he is penetrating her the man can slowly sit up, so they are facing each other with their legs intertwined. For added comfort they can both slip their arms under each other&#x27;s knees.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/79"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__79" title="The Zen Pause"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/80-the-zen-pause.jpg" title="The Zen Pause" alt="80-the-zen-pause.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss101 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">80. The Zen Pause</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This position is ideal if you need to slow down the pace during a long sex session. The man and the woman both lay on their sides facing each other. The man enters the woman as she wraps her legs around him.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/80"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__80" title="The Landslide"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/81-the-landslide.jpg" title="The Landslide" alt="81-the-landslide.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss102 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">81. The Landslide</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Because of the angles, this position is best suited to a well endowed man. The woman lays on her stomach, with her legs stretched out and raises her torso by resting on her elbows. The man sits between her legs, facing the back of her head, with his legs parted either side of her waist. He tilts his body at a slight angle to enter her and while doing so supports himself with his hands propped up behind him.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/81"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__81" title="The Supernova"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/82-the-supernova.jpg" title="The Supernova" alt="82-the-supernova.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss103 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">82. The Supernova</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">This sex position is a slight variation of the classic woman-on-top, but this time the man lays with the top half of his body handing off the edge of the bed, while the woman sits astride him and leans back onto her arms for support. Careful not to topple over the edge of the bed.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/82"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__82" title="The Squat Balance"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/83-the-squat-balance.jpg" title="The Squat Balance" alt="83-the-squat-balance.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss104 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">83. The Squat Balance</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman stands on the bed with the man standing behind her. He places his hands on her bottom and she slowly lowers herself onto him. He can then penetrate her while she uses his arms to balance.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/83"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__83" title="The Shoulder Holder"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/84-the-shoulder-holder.jpg" title="The Shoulder Holder" alt="84-the-shoulder-holder.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss105 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">84. The Shoulder Holder</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back with a pillow under her head and her legs straight up in the air. The man kneels to penetrate her, while gripping her legs and resting them against one of his shoulders. He can use his other hand for support. Ideal for deep penetration.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/84"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__84" title="The Seduction"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/85-the-seduction.jpg" title="The Seduction" alt="85-the-seduction.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss106 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">85. The Seduction</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her back with her legs bent underneath her body - only attempt this if you are quite flexible. The man then lays on top of the woman to penetrate her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/85"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__85" title="The Lustful Leg"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/86-the-lustful-leg.jpg" title="The Lustful Leg" alt="86-the-lustful-leg.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss107 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">86. The Lustful Leg</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Another position which requires a great deal of flexibility. The man and the woman both stand facing each other. The woman starts by placing her leg on the bed so the man can enter her. Once inside he can slowly help her to raise her leg onto his shoulder. Careful not to lose your balance and topple over!</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/86"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__86" title="The Glowing Triangle"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/87-the-glowing-triangle.jpg" title="The Glowing Triangle" alt="87-the-glowing-triangle.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss108 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">87. The Glowing Triangle</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The glowing triangle position is a simple, yet extremely effective, twist on the classic missionary position. The woman lays on her back, while the man moves on top of her. But instead of laying on top of her, he gets onto all fours and she has to raise her pelvis so he can penetrate her. He then stays still and she does all the work.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/87"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__87" title="The Y Curve"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/88-the-y-curve.jpg" title="The Y Curve" alt="88-the-y-curve.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss109 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">88. The Y Curve</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Quite a tricky position which requires strength and balance from the man. The woman lays face down on the bed and lets the top half of her body hang off the edge. She may need a pillow to rest her head on. The man lays between her legs to penetrate her and pushes his body up so he isn&#x27;t laying on her back.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/88"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__88" title="The Magic Mountain"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/89-the-magic-mountain.jpg" title="The Magic Mountain" alt="89-the-magic-mountain.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss110 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">89. The Magic Mountain</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">First you need to stack a pile of firm pillows to form your mountain. Then the woman kneels down and bends over the pillows, so her chest is flat on the cushions. The man kneels behind her and with his legs either side of her, penetrates her deeply.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/89"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__89" title="The Lap Top"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/90-the-lap-top.jpg" title="The Lap Top" alt="90-the-lap-top.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss111 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">90. The Lap Top</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man sits on a chair with a pillow under his knees to elevate them. The woman sits on his lap and raises her legs so they are wrapped around his neck. The woman can then rock back and forth on his penis while he supports her back with his hands.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/90"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__90" title="The Stair Master"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/91-the-stair-master.jpg" title="The Stair Master" alt="91-the-stair-master.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss112 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">91. The Stair Master</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">In case you hadn&#x27;t already guessed by the title, you will need some stairs for this sex position. The woman kneels on one step while her partner stands a couple of steps lower and enters her from behind. She can use the step in front of her or the banister to help her balance, while the man can simply hold on to her hips as he penetrates her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/91"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__91" title="The Mermaid"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/92-the-mermaid.jpg" title="The Mermaid" alt="92-the-mermaid.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss113 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">92. The Mermaid</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on a table with her bottom right at the edge. She then lifts both legs in the air (she can place a pillow under her bottom if it&#x27;s more comfortable) while the man stands and penetrates her. For extra stability he can steady himself by holding her feet.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/92"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__92" title="The Sidekick"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/93-the-sidekick.jpg" title="The Sidekick" alt="93-the-sidekick.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss114 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">93. The Sidekick</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her side with her back to the man. He kneels behind her, facing towards her head and straddles her leg while entering her. She then stretches out her top leg to allow him more room to manoeuvre.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/93"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__93" title="The Thigh Master"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/94-the-thigh-master.jpg" title="The Thigh Master" alt="94-the-thigh-master.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss115 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">94. The Thigh Master</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The man lies on his back with his legs bent and slightly parted. The woman faces away from the man and straddles one of his thighs. With her body at a slight angle, she then holds onto his knees while slowly lowering herself onto him.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/94"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__94" title="The Butterfly"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/95-the-butterfly.jpg" title="The Butterfly" alt="95-the-butterfly.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss116 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">95. The Butterfly</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Similar to the mermaid, the butterfly position involves having sex while the woman lays on a relatively low table with her bottom right on the edge. The man stands and helps her raise her hips with his hands. He penetrates her while she rests her legs on his shoulders.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/95"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__95" title="The Sideways Samba"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/96-the-sideways-samba.jpg" title="The Sideways Samba" alt="96-the-sideways-samba.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss117 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">96. The Sideways Samba</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lays on her side with her legs stretched out in front of her at a 90 degree angle. She needs to tilt her pelvis inwards, while the man lays behind her and raises his torso with an arm either side of waist for support as he penetrates her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/96"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__96" title="The Side Saddle"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/97-the-side-saddle.jpg" title="The Side Saddle" alt="97-the-side-saddle.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss118 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">97. The Side Saddle</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">An easy sex position and great if you fancy trying some a little bit different, which doesn&#x27;t require too much effort. The man lays on his back, with a pillow behind his head and his legs stretched out. The woman sits across him with her legs on one side of his waist and her hands on the other, supporting her weight. As he penetrates her she can slowly open and close her legs, while making swivelling motions to drive him wild.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/97"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__97" title="The Proposal"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/98-the-proposal.jpg" title="The Proposal" alt="98-the-proposal.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss119 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">98. The Proposal</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">Both the man and the woman kneel facing each other (it helps if you are similar heights). He puts one foot on the ground (as if he were proposing) and she puts the opposite foot on the ground ready for penetration to begin. You may need to wiggle around a little bit to get into a comfortable. A relatively easy sex position and good if you want to try something new.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/98"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__98" title="The G-Force"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/99-the-g-force.jpg" title="The G-Force" alt="99-the-g-force.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss120 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">99. The G-Force</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">In this sex position the woman lays on her back and pulls her knees right up to her chest. The man kneels behind her and lifts her torso off the ground so her back is parallel to his thighs. She can help herself balance by holding onto his legs, while he holds onto her feet and penetrates her.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/99"><span class="MuiButton-label">see more</span></a></div></div></div><div class="MuiPaper-root MuiCard-root css-1huya52 MuiPaper-elevation1 MuiPaper-rounded" id="card__99" title="The Right Angle"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><img class="MuiCardMedia-root css-1wwk2bk MuiCardMedia-media MuiCardMedia-img" src="/playground/images/kohmasutra/100-the-right-angle.jpg" title="The Right Angle" alt="100-the-right-angle.jpg"/><span class="MuiCardActionArea-focusHighlight"></span></button><div class="MuiBox-root jss121 css-1x0brxv"><div class="MuiCardContent-root css-18g08sj"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom">100. The Right Angle</h2><p class="MuiTypography-root css-13a6rvs MuiTypography-body2 MuiTypography-colorTextSecondary">The woman lies on her back, with her bottom at the edge of the bed or table for the Right Angle sex position. Her partner enters her while caressing her breasts or clitoris. The Right Angle position also works well without thrusting: if the woman grips hold of the man by crossing her ankles behind his back and he presses himself against her, the pressure will mount, giving both partners intense pleasure. This is a very stimulating position if she can squeeze her pelvis floor muscles.</p></div><div class="MuiCardActions-root css-skgbeu MuiCardActions-spacing"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSecondary MuiButton-textSizeLarge MuiButton-sizeLarge" tabindex="0" aria-disabled="false" href="/playground/kohmasutra/posts/100"><span class="MuiButton-label">see more</span></a></div></div></div></div></div></main></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/kohmasutra/posts","query":{},"buildId":"Vxg_2aND4jEwkokRfstOX","assetPrefix":"/playground","nextExport":true,"autoExport":true,"isFallback":false}</script><script nomodule="" src="/playground/_next/static/chunks/polyfills-8c65bf9747452564f044.js"></script><script src="/playground/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" async=""></script><script src="/playground/_next/static/chunks/framework.900ff9a55f86e5377e8c.js" async=""></script><script src="/playground/_next/static/chunks/2d54d12e3c5593c0ab8fb905e7e566e2a43f3aad.5860c106161006de5017.js" async=""></script><script src="/playground/_next/static/chunks/main-45e4720ad2d053bddb20.js" async=""></script><script src="/playground/_next/static/chunks/31e917fa8c8b4b19ba045abd96cf2eec87c82911.d3a766427e4fb5ceef46.js" async=""></script><script src="/playground/_next/static/chunks/79761ccf496293c482d72b12f10c312e3c9d1a2d.2a9c88acab65e86aa451.js" async=""></script><script src="/playground/_next/static/chunks/115bc2595afe4d345fbe8c562cc72a7cdd6de8d1.e39588ce42c98c573703.js" async=""></script><script src="/playground/_next/static/chunks/9af8f74256e158f4b49dee91f9a1ec57bd3cf8b2.fb637fc0ae85e5c54962.js" async=""></script><script src="/playground/_next/static/chunks/9201b1d211df5902f248dcc39d128375de8df755.22018bc1498415d3090e.js" async=""></script><script src="/playground/_next/static/chunks/pages/_app-8a9133fa9d7ee14d420f.js" async=""></script><script src="/playground/_next/static/chunks/c9b82df22fc75113692d3821eb747d7ea0c865f3.32611492ebbe0fe72304.js" async=""></script><script src="/playground/_next/static/chunks/pages/kohmasutra/posts-b198e55261643e03b4ca.js" async=""></script><script src="/playground/_next/static/Vxg_2aND4jEwkokRfstOX/_buildManifest.js" async=""></script><script src="/playground/_next/static/Vxg_2aND4jEwkokRfstOX/_ssgManifest.js" async=""></script></body></html>
