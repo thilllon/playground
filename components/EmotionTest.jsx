@@ -61,7 +61,7 @@ const useStyles2 = makeStyles((theme) => ({
     fontSize: '3rem',
   },
   // label: {
-  // fontSize: '3rem',
+  //   fontSize: '3rem',
   // },
 }));
 
@@ -76,6 +76,10 @@ export const EmotionTestButtons = () => {
       css={css`
         display: flex;
         flex-flow: column nowrap;
+        align-items: center;
+        button {
+          margin-bottom: 1rem;
+        }
       `}
     >
       <Button variant='contained' color='primary'>
